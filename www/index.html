@@ -3,28 +3,343 @@
 <!-- HEAD -->
 <head>
     <meta charset="UTF-8">
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta property="og:title" content="" />
-<meta property="og:url" content="" />
-<meta property="og:image" content="" />
-<meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
-<link id="favicon" rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
-    <title>Anasayfa</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta property="og:title" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+    <link id="favicon" rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <title>Anladım Hocam - Anasayfa</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-<link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/grid12.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <!-- HEAD -->
 
 <body>
-    <header></header> 
+    <!-- SOCIAL ICONS AND SEAERCH BUTTON -->
+    <a href="#" class="search-icon"><i class="fa fa-search"></i></a>
+    <ul class="social-icons">
+        <li><a href="https://youtube.com/baydeveloper"><i class="fa fa-youtube"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+    </ul>
+    <!-- /SOCIAL ICONS AND SEARCH BUTTON -->
+    <!-- HEADER -->
+    <div class="container">
+        <header>
+            <div class="logo">
+                <img src="images/siren-logo.svg" alt="">
+            </div>
+            <ul class="navbar-menu text-center list-inline">
+                <li class="active"><a href="#">Tüm Videolar</a></li>
+                <li><a href="#">Vloglar</a></li>
+                <li>
+                    <a href="#">Ders Videoları</a>
+                    <ul class="dropdown">
+                        <li><a href="#">Matematik</a></li>
+                        <li><a href="#">Dil ve Anlatım</a></li>
+                        <li><a href="#">Fizik</a></li>
+                        <li><a href="#">Kimya</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Proje Hakkında</a></li>
+                <li><a href="#">Giriş Yap</a></li>
+                <li class="ghost-button"><a href="#">Üye Ol</a></li>
+            </ul>
+        </header>
+    </div>
+    <!-- /HEADER -->
+    <!-- SLIDER -->
+    <section class="container">
+        <div id="slider">
+            <div class="row">
+                <div class="col col-md-8 slider-big-image">
+                    <div class="image">
+                        <img src="images/slider-1.png" alt="Slider 1">
+                    </div>
+                    <div class="caption">
+                        <h1><a href="#">Fonksiyonlar & Fonksiyonların Tersini Alıp İşlem Yapmak</a></h1>
+                        <p class="info"><a href="#">Matematik</a> / 10 Eylül 2017</p>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="row">
+                        <div class="col col-md-12">
+                            <div class="image">
+                                <img src="images/slider-2.png" alt="Slider 2">
+                            </div>
+                            <div class="caption small">
+                                <h1><a href="#">Geometri: Sinüs Teoremi</a></h1>
+                                <p class="info"><a href="#">Geometri</a> / 9 Eylül 2017</p>
+                            </div>
+                        </div>
+                        <div class="col col-md-12">
+                            <div class="image">
+                                <img src="images/slider-3.png" alt="Slider 3">
+                            </div>
+                            <div class="caption small">
+                                <h1><a href="#">Paragraf Soruları Çözüyoruz</a></h1>
+                                <p class="info"><a href="#">Türkçe</a> / 10 Eylül 2017</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /SLIDER -->
 
-    index içeriği
-    
-    <footer></footer>
+    <!-- SON VLOGLAR -->
+    <section id="latest-videos">
+        <div class="container">
+            <h1 class="section-title dark">Son Vloglar</h1>
+            <!-- Videos & Playlist -->
+            <div class="row row-eq-height">
+                <div class="col col-md-8">
+                    <div class="player">
+                        <iframe style="width: 100%; height: 400px;" src="https://www.youtube.com/embed/uY_7SBdtc10?autoplay=0&rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <ul class="latest-videos-playlist">
+                        <li>
+                            <h3><a href="#">Monochrome Canadian ski lodge by Atelier Kastelic</a></h3>
+                            <p class="info">10 Eylül 2017 <span class="pull-right">10:39</span></p>
+                        </li>
+                        <li class="active">
+                            <h3><a href="#">IKEA launches solar battery</a></h3>
+                            <p class="info"><i class="fa fa-play"></i> OYNATILIYOR <span class="pull-right">10:39</span></p>
+                            <div class="playerbar"></div>
+                        </li>
+                        <li>
+                            <h3><a href="#">Timeline of Design History</a></h3>
+                            <p class="info">8 Eylül 2017 <span class="pull-right">10:39</span></p>
+                        </li>
+                        <li>
+                            <h3><a href="#">Contemporary Canadian farmhouse</a></h3>
+                            <p class="info">7 Eylül 2017 <span class="pull-right">10:39</span></p>
+                        </li>
+                        <li>
+                            <h3><a href="#">This One Is Just Some Kind Of Test</a></h3>
+                            <p class="info">6 Eylül 2017 <span class="pull-right">10:39</span></p>
+                        </li>
+                        <li>
+                            <h3><a href="#">Monochrome Canadian ski lodge by Atelier Kastelic</a></h3>
+                            <p class="info">10 Eylül 2017 <span class="pull-right">10:39</span></p>
+                        </li>
+                        <li>
+                            <h3><a href="#">Timeline of Design History</a></h3>
+                            <p class="info">8 Eylül 2017 <span class="pull-right">10:39</span></p>
+                        </li>
+                        <li>
+                            <h3><a href="#">Contemporary Canadian farmhouse</a></h3>
+                            <p class="info">7 Eylül 2017 <span class="pull-right">10:39</span></p>
+                        </li>
+                        <li>
+                            <h3><a href="#">This One Is Just Some Kind Of Test</a></h3>
+                            <p class="info">6 Eylül 2017 <span class="pull-right">10:39</span></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /Videos & Playlist -->
+        </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section id="latest-articles">
+        <div class="container">
+            <h1 class="section-title">Son Yazılar</h1>
+            <div class="row">
+                <div class="col col-md-8">
+                    <div id="latest-articles">
+                        <div class="article">
+                            <div class="row">
+                                <div class="col col-md-4">
+                                    <div class="image">
+                                        <img src="images/article-1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-md-8">
+                                    <div class="article-description">
+                                        <h1>Catch waves with an adventure guide</h1>
+                                        <p>Learn to surf like a local. First, we’ll decide on a good break based on the surf conditions and weather.</p>
+                                        <p class="info">8 Eylül 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="row">
+                                <div class="col col-md-4">
+                                    <div class="image">
+                                        <img src="images/article-2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-md-8">
+                                    <div class="article-description">
+                                        <h1>London house and garden studio</h1>
+                                        <p>Learn to surf like a local. First, we’ll decide on a good break based on the surf conditions and weather.</p>
+                                        <p class="info">8 Eylül 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article">
+                            <div class="row">
+                                <div class="col col-md-4">
+                                    <div class="image">
+                                        <img src="images/article-3.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col col-md-8">
+                                    <div class="article-description">
+                                        <h1>Catch waves with an adventure guide</h1>
+                                        <p>The Montreal band’s fifth album finds them in musical and lyrical stasis.</p>
+                                        <p class="info">8 Eylül 2017</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="whitespace"></div>
+                    <a href="#" class="link-button pull-right">Tümünü Gör</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="col col-md-4">
+                    <img src="images/ad-image.png">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Latest Articles -->
+
+    <!-- Category Videos Dark -->
+    <section class="dark">
+        <div class="container">
+            <h1 class="section-title">Son Matematik Videoları</h1>
+            <div class="row category-posts row-eq-height">
+                <div class="col col-md-4">
+                    <div class="post latest">
+                        <div class="image">
+                            <img src="images/category-video-1.png">
+                        </div>
+                        <div class="caption">
+                            <h1>Stretch it out at sunset on Baker Beach</h1>
+                            <p>Gather at Baker Beach before class to meet the founder of Outdoor Yoga SF, learn about the history of Baker Beach and why its important to Outdoor Yoga SF. </p>
+                            <p class="info">10 Eylül 2017</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="post">
+                        <div class="image">
+                            <img src="images/category-video-1.png">
+                        </div>
+                        <div class="caption">
+                            <h1>Fragile Future, Private Commission Paris</h1>
+                            <p>Aliquam gravida congue risus, ac sollicitudin risus dictum quis. Etiam urna libero, vehicula eget neque vel, congue blandit dui. Pellentesqu...</p>
+                            <p class="info">10 Eylül 2017</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="post">
+                        <div class="image">
+                            <img src="images/category-video-1.png">
+                        </div>
+                        <div class="caption">
+                            <h1>Joshua Tree Overnight Adventure</h1>
+                            <p>Aliquam gravida congue risus, ac sollicitudin risus dictum quis. Etiam urna libero, vehicula eget neque vel, congue blandit dui. Pellentesqu...</p>
+                            <p class="info">10 Eylül 2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Category Videos Dark -->
+
+    <!-- Category Videos -->
+    <section>
+        <div class="container">
+            <h1 class="section-title">Son Türkçe Videoları</h1>
+            <div class="row category-posts row-eq-height">
+                <div class="col col-md-4">
+                    <div class="post latest">
+                        <div class="image">
+                            <img src="images/category-video-1.png">
+                        </div>
+                        <div class="caption">
+                            <h1>Stretch it out at sunset on Baker Beach</h1>
+                            <p>Gather at Baker Beach before class to meet the founder of Outdoor Yoga SF, learn about the history of Baker Beach and why its important to Outdoor Yoga SF. </p>
+                            <p class="info">10 Eylül 2017</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="post">
+                        <div class="image">
+                            <img src="images/category-video-1.png">
+                        </div>
+                        <div class="caption">
+                            <h1>Fragile Future, Private Commission Paris</h1>
+                            <p>Aliquam gravida congue risus, ac sollicitudin risus dictum quis. Etiam urna libero, vehicula eget neque vel, congue blandit dui. Pellentesqu...</p>
+                            <p class="info">10 Eylül 2017</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-md-4">
+                    <div class="post">
+                        <div class="image">
+                            <img src="images/category-video-1.png">
+                        </div>
+                        <div class="caption">
+                            <h1>Joshua Tree Overnight Adventure</h1>
+                            <p>Aliquam gravida congue risus, ac sollicitudin risus dictum quis. Etiam urna libero, vehicula eget neque vel, congue blandit dui. Pellentesqu...</p>
+                            <p class="info">10 Eylül 2017</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /Category Videos -->
+
+    <!-- Quote -->
+    <section id="quote">
+        <div class="image">
+            <img src="images/quote.jpg" id="quote-bg">
+        </div>
+        <blockquote>
+            <div class="container">    
+                <h2>"Günün Anlamlı Sözü Buraya Gelecek Ama Biraz Daha Uzun Olması Lazım"</h2>
+                <div class="whitespace"></div>
+                <cite>by Jeremy D. Larson </cite>
+            </div>
+        </blockquote>
+    </section>
+    <!-- /Quote -->
+
+    <!-- Footer -->
+    <section id="footer">
+        <div class="container">
+            <div class="logo">
+                <img src="images/siren-logo-light.svg">
+            </div>
+            <hr>
+            <ul class="footer-social-links text-center list-inline">
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="https://youtube.com/baydeveloper"><i class="fa fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </section>
+    <!-- /Footer -->
+
     <script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
- <script src="assets/js/main.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
 </body>
 </html>
